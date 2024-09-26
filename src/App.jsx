@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import logo from "./img/logo.svg";
 import "./Navbar.css";
+import 'bulma/css/bulma.min.css';
+import "./style.css";
 
 
 export default function App() {
@@ -23,15 +25,17 @@ const Navbar = () => {
   };
 
   return (
+<section class="hero is-medium main__header">
+<div class="hero-head">
     <nav
-      className="navbar is-transparent"
+      className="navbar main__header__layout"
       role="navigation"
       aria-label="main-navigation"
       style={{backgroundColor:"rgba(40,86,161,1)"}}
     >
       <div className="container">
         <div className="navbar-brand">
-          <a href="http://jomo-news.co.jp/" target="_blank" rel="noreferrer" className="navbar-item">
+          <a href="http://jomo-news.co.jp/" target="_blank" rel="noreferrer">
             <img src={logo} alt="" style={{ width: "120px" }} />
           </a>
           {/* Hamburger menu */}
@@ -69,5 +73,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+</div>
+</section>
   );
 };
