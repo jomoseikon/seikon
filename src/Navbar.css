@@ -1,3 +1,6 @@
+.navbar {
+	height:4rem;
+}
 .navbar a:link, a:visited {
     color:white ;
 	background-color:rgba(40,86,161,1);

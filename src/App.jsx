@@ -6,7 +6,12 @@ import "./Navbar.css";
 import 'bulma/css/bulma.min.css';
 import "./style.css";
 
+
+import Home from './pages/Home';
 import Products from './pages/Products'; // Products component
+import Blog from './pages/Blog'; // Blog component
+import About from './pages/About';
+
 import FullWidthImage from './FullWidthImage'; // FullWidthImage component
 
 export default function App() {
@@ -30,9 +35,9 @@ export default function App() {
 }
 
 // Example placeholder components for Home, Blog, and About
-const Home = () => <div>Welcome to the Home Page!</div>;
-const Blog = () => <div>Welcome to the Blog Page!</div>;
-const About = () => <div>Welcome to the About Page!</div>;
+// const Home = () => <div>Welcome to the Home Page!</div>;
+// const Blog = () => <div>Welcome to the Blog Page!</div>;
+// const About = () => <div>Welcome to the About Page!</div>;
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -53,7 +58,7 @@ const Navbar = () => {
           <div className="container">
             <div className="navbar-brand">
               <a href="http://jomo-news.co.jp/" target="_blank" rel="noreferrer">
-                <img src={logo} alt="" style={{ width: "120px" }} />
+                <img src={logo} alt="" style={{ width: "120px", marginTop:".9rem" }} />
               </a>
               {/* Hamburger menu */}
               <div
@@ -73,7 +78,7 @@ const Navbar = () => {
               id="navMenu"
               className={`navbar-menu ${isActive ? 'is-active' : ''}`}
             >
-              <div className="navbar-end has-text-centered">
+              <div className="navbar-end has-text-centered" style={{marginTop: ".9rem"}}>
                 <Link className="navbar-item" to="/" style={{ backgroundColor: "rgba(40,86,161,1)" }} aria-label="トップページ">
                   トップページ
                 </Link>

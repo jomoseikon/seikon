@@ -188,21 +188,29 @@ h2 {
             border:1px solid orangered;
         }
     }*/
-  height: 90vh; }
+    
+  height: 90vh;
+  border:none;
+}
   @media only screen and (max-width: 75em) {
     .main__header {
-      height: 65vh;
+      height: 87vh;
       border: none; } }
   @media only screen and (max-width: 56.25em) {
     .main__header {
-      height: 62vh;
-      border: none; } }
+      height: 86vh;
+      border: none;
+    } }
   @media only screen and (max-width: 37.5em) {
     .main__header {
-      height: 38vh; } }
+      height: 82vh; 
+      border: none;
+      } }
   @media only screen and (min-width: 112.5em) {
     .main__header {
-      height: 70vh; } }
+      height: 70vh;
+      border:none;
+     } }
   .main__header nav .user-nav__twitter a {
     color: #666;
     font-size: .8em;
