@@ -1,0 +1,35 @@
+
+div.margin-top-0 {
+    clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  
+  /* only IE10 以降 */
+  @media all and (-ms-high-contrast: none) {
+  div.margin-top-0 {
+      position:relative;
+  }
+  div.margin-top-0 div:nth-child(1){
+      top:0%;
+      left:0%;
+  }
+  div.margin-top-0 div:nth-child(2) {
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+  }
+  }
+
+  /* FullWidthImage.css */
+.full-width-image-container {
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove paddings */
+  }
+  
+  img {
+    display: block; /* Remove inline spacing */
+    max-width: 100%; /* Ensure images fit the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  

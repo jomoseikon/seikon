@@ -78,7 +78,8 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.8;
   color: #444;
-  font-size: 1.2em; }
+  font-size: 1.2em; 
+}
 
 h2 {
   font-family: "M PLUS 1p", sans-serif;
@@ -176,6 +177,7 @@ h2 {
   background-position: top;
   background-blend-mode: lighten;
   position: relative;
+
   /*.header {
         height: 5rem;
         border-bottom:var(--line);
@@ -186,7 +188,7 @@ h2 {
             border:1px solid orangered;
         }
     }*/
-  height: 73vh; }
+  height: 90vh; }
   @media only screen and (max-width: 75em) {
     .main__header {
       height: 65vh;
