@@ -1,10 +1,11 @@
 // App.jsx
-import { useState } from 'react';
+import { useState, useEffect  } from 'react';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'; // Added Routes, Route
 import logo from "./img/logo.svg";
 import "./Navbar.css";
 import 'bulma/css/bulma.min.css';
 import "./style.css";
+
 
 
 import Home from './pages/Home';
@@ -13,9 +14,11 @@ import Blog from './pages/Blog'; // Blog component
 import About from './pages/About';
 
 import FullWidthImage from './FullWidthImage'; // FullWidthImage component
+import BlogRoll from './BlogRoll';
 import Footer from './Footer';
 
 export default function App() {
+
   return (
     <div>
       <Router>
@@ -29,6 +32,8 @@ export default function App() {
             <Route path="/blog" element={<Blog />} /> {/* Add the Blog component */}
             <Route path="/about" element={<About />} /> {/* Add the About component */}
           </Routes>
+
+          <BlogRoll />
 
           <Footer />
         </div>
@@ -109,3 +114,4 @@ const Navbar = () => {
     </section>
   );
 };
+
