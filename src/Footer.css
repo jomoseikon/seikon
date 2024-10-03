@@ -1,0 +1,15 @@
+a {
+    color:white
+}
+a:hover {
+    color:#5ab5d7;
+}
+.menu-list {
+
+}
+.menu-list > li > a {
+    color:white
+}
+.menu-list > li > a:hover {
+    color:#5ab5d7;
+}

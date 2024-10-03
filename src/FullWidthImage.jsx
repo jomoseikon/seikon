@@ -82,6 +82,7 @@ export default function FullWidthImage(props) {
                 {title}
               </h1>
             )}
+            
           </div>
         )}
       </div>
