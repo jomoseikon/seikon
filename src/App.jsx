@@ -14,7 +14,7 @@ import Blog from './pages/Blog'; // Blog component
 import About from './pages/About';
 
 import FullWidthImage from './FullWidthImage'; // FullWidthImage component
-import BlogRoll from './BlogRoll';
+
 import Footer from './Footer';
 
 export default function App() {
@@ -32,8 +32,8 @@ export default function App() {
             <Route path="/blog" element={<Blog />} /> {/* Add the Blog component */}
             <Route path="/about" element={<About />} /> {/* Add the About component */}
           </Routes>
-
-          <BlogRoll />
+      
+          
 
           <Footer />
         </div>
