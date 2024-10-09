@@ -10,6 +10,7 @@ const Home = () => {
       <input type="button" className="button is-info" value="入会申し込みフォーム" /></a>
       <p>豊富な講師陣による良質な講演をお届けする知的サロンです。ぜひご⼊会ください。</p>
       {/* Add your top list or any content here */}
+      <strong>最近の講演</strong>
       <BlogRoll />
     </div>
 
