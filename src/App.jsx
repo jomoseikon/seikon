@@ -1,47 +1,41 @@
 // App.jsx
-import { useState, useEffect  } from 'react';
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'; // Added Routes, Route
+import { useState } from 'react';
+import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import logo from "./img/logo.svg";
 import "./Navbar.css";
 import 'bulma/css/bulma.min.css';
 import "./style.css";
 
-
-
 import Home from './pages/Home';
-import Products from './pages/Products'; // Products component
-import Blog from './pages/Blog'; // Blog component
+import Products from './pages/Products';
+import BlogRoll from './BlogRoll'; // Import BlogRoll
+import Blog from './pages/Blog';
 import About from './pages/About';
 
-import FullWidthImage from './FullWidthImage'; // FullWidthImage component
-
+import FullWidthImage from './FullWidthImage';
 import Footer from './Footer';
 
 export default function App() {
-
   return (
     <div>
       <Router>
         <div className="App">
-          <Navbar /> {/* Navbar will remain constant */}
+          <Navbar />
           
-          {/* This is where the page content will change based on the route */}
           <Routes>
-            <Route path="/" element={<Home />} /> {/* Example Home page */}
+            <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/blog" element={<Blog />} /> {/* Add the Blog component */}
-            <Route path="/about" element={<About />} /> {/* Add the About component */}
+            <Route path="/blog" element={<BlogRoll />} /> {/* Show list of blog posts */}
+            <Route path="/blog/:id" element={<Blog />} /> {/* Show individual blog post */}
+            <Route path="/about" element={<About />} />
           </Routes>
       
-          
-
           <Footer />
         </div>
       </Router>
     </div>
   );
 }
-
 // Example placeholder components for Home, Blog, and About
 // const Home = () => <div>Welcome to the Home Page!</div>;
 // const Blog = () => <div>Welcome to the Blog Page!</div>;

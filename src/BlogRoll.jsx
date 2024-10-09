@@ -1,9 +1,8 @@
-import React from "react";
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Airtable from 'airtable';
 import 'bulma/css/bulma.min.css';
 import { Columns, Card, Content } from 'react-bulma-components';
-import { Link } from 'react-router-dom'; // Make sure you have react-router-dom installed
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const base = new Airtable({ apiKey: process.env.VITE_APP_AIRTABLE_ACCESS_TOKEN }).base(process.env.VITE_APP_AIRTABLE_BASE_ID);
 
@@ -16,7 +15,7 @@ export default function BlogRoll() {
         base('Schedule').select({ view: 'Grid view' }).eachPage((records, fetchNextPage) => {
             setData(records.map((record) => ({
                 ...record.fields,
-                id: record.id // Include the record ID for linking
+                id: record.id
             })));
             fetchNextPage();
         });
@@ -32,8 +31,9 @@ export default function BlogRoll() {
                             <Content>
                                 <p className="title is-4">{item.name}</p>
                                 <p className="subtitle is-6">{item.type}</p>
-                                <Link to={`/seminar/${item.id}`} className="button is-link">
-                                    View Details
+                                {/* Use Link to navigate to the Blog detail page */}
+                                <Link to={`/blog/${item.id}`} className="button is-info">
+                                    詳細はこちら
                                 </Link>
                             </Content>
                         </Card.Content>
