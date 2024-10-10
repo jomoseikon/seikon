@@ -5,7 +5,7 @@ import seikei from "./img/title2024.svg"; // Adjust the path if necessary
 
 export default function FullWidthImage(props) {
   const {
-    height = 400, // Default height
+    height = 500, // Default height
     img,
     title,
     subheading,
