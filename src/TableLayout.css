@@ -1,0 +1,37 @@
+table > a, a:visited {
+    color:#1776f4 !important;
+    font-weight:900;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    background:inherit;
+    opacity: .5;
+}
+
+/* table 水平スクロール */
+table {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 横スクロールバー */
+.tbl_wrap {
+    overflow-x: scroll;
+    /* border-left:3px solid #efefef;
+    border-top:3px solid #efefef; */
+  }
+  .tbl_wrap::-webkit-scrollbar {
+    height: 10px;
+  }
+  .result_table_wrap::-webkit-scrollbar-track {
+    margin: 0 2px;
+    background: #ccc;
+    border-radius: 5px;
+  }
+  .result_table_wrap::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #666;
+  }

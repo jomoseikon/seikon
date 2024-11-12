@@ -9,6 +9,7 @@ import "./style.css";
 import Home from './pages/Home';
 import Products from './pages/Products';
 import BlogRoll from './BlogRoll'; // Import BlogRoll
+import TableLayout from './TableLayout';
 import Blog from './pages/Blog';
 import About from './pages/About';
 
@@ -25,7 +26,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/blog" element={<BlogRoll />} /> {/* Show list of blog posts */}
+            <Route path="/blog" element={<TableLayout />} /> {/* Show list of blog posts */}
             <Route path="/blog/:id" element={<Blog />} /> {/* Show individual blog post */}
             <Route path="/about" element={<About />} />
           </Routes>
