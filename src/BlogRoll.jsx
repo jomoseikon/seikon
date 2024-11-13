@@ -8,14 +8,27 @@ const base = new Airtable({ apiKey: process.env.VITE_APP_AIRTABLE_ACCESS_TOKEN }
 
 import "./BlogRoll.css";
 
+const formatDate = (date) => 
+    new Intl.DateTimeFormat("ja", {
+      day: "numeric", 
+      month: "long",
+      year: "numeric", 
+    }).format(new Date(date));
+
 export default function BlogRoll() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        base('Schedule').select({ view: 'Grid view' }).eachPage((records, fetchNextPage) => {
-            setData(records.map((record) => ({
-                ...record.fields,
-                id: record.id
+        base('Schedule')
+            .select({ 
+                maxRecords: 12, // Limit to 20 records
+                view: 'Grid view'
+             })
+            .eachPage(
+                (records, fetchNextPage) => {
+                    setData(records.map((record) => ({
+                    ...record.fields,
+                    id: record.id
             })));
             fetchNextPage();
         });
@@ -29,8 +42,9 @@ export default function BlogRoll() {
                         <Card.Image src={item.image?.[0]?.url || 'default_image_url'} alt={item.name} />
                         <Card.Content>
                             <Content>
-                                <p className="title is-4">{item.name}</p>
+                                <p className="title is-5">{item.name}</p>
                                 <p className="subtitle is-6">{item.type}</p>
+                                <p className="subtitle is-6">{formatDate(item.date)}</p>
                                 {/* Use Link to navigate to the Blog detail page */}
                                 <Link to={`/blog/${item.id}`} className="button is-info">
                                     詳細はこちら

@@ -6,6 +6,13 @@ import "./TableLayout.css";
 
 const base = new Airtable({ apiKey: process.env.VITE_APP_AIRTABLE_ACCESS_TOKEN }).base(process.env.VITE_APP_AIRTABLE_BASE_ID);
 
+const formatDate = (date) => 
+    new Intl.DateTimeFormat("ja", {
+      day: "numeric", 
+      month: "long",
+      year: "numeric", 
+    }).format(new Date(date));
+
 export default function TableLayout() {
     const [data, setData] = useState([]);
 
@@ -20,9 +27,11 @@ export default function TableLayout() {
     }, []);
 
   return (
-    <>
-    <div className="columns is-mobile is-mutiline">
+    <div className="container">
+    <div className="section">
+    <div className="columns is-mobile is-mutiline is-centered">
         <div className="column is-12 table_wrap">
+        <h2 className="title is-3">最近の講演</h2>
             <p className="has-text-left">
                 <small>※↓画面を横にスクロールできます</small>
             </p>
@@ -31,7 +40,7 @@ export default function TableLayout() {
                     {data.map((item) => (
                         <tr key={item.id}>
                             <td><Link to={`/blog/${item.id}`} >{item.name}</Link></td>
-                            <td>{item.date}</td>
+                            <td>{formatDate(item.date)}</td>
                             <td>{item.place}</td>
                         </tr>
                     ))}
@@ -39,6 +48,7 @@ export default function TableLayout() {
             </table>
         </div>
     </div>
-    </>
+    </div>
+    </div>
   )
 }

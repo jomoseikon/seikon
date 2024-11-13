@@ -1,9 +1,10 @@
 // src/pages/Home.jsx
 import React from 'react';
 import BlogRoll from '../BlogRoll';
-
+import Purpose from '../Purpose';
 const Home = () => {
   return (
+    <>
     <div className="section">
       <h1>入会のご案内</h1>
       <a href="https://jomo-news-form.spiral-site.com/discussion?_ifbs-discussion=s1_Step1" target="_blank" >
@@ -13,7 +14,10 @@ const Home = () => {
       <strong>最近の講演</strong>
       <BlogRoll />
     </div>
-
+    <div className="section">
+      <Purpose />
+    </div>
+    </>
   );
 };
 
