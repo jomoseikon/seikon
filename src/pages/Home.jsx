@@ -2,6 +2,8 @@
 import React from 'react';
 import BlogRoll from '../BlogRoll';
 import Purpose from '../Purpose';
+import { Link } from 'react-router-dom'; // Import Link for navigation
+import { ArrowRight } from 'lucide-react';
 const Home = () => {
   return (
     <>
@@ -13,6 +15,9 @@ const Home = () => {
       {/* Add your top list or any content here */}
       <strong>最近の講演</strong>
       <BlogRoll />
+      <div className="section" style={{textAlign:'right'}}>
+       <Link to="/blog">そのほかの講演を見る <ArrowRight /></Link>
+      </div>
     </div>
     <div className="section">
       <Purpose />
