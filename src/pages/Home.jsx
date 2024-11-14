@@ -2,6 +2,7 @@
 import React from 'react';
 import BlogRoll from '../BlogRoll';
 import Purpose from '../Purpose';
+import Features from '../Features';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import { ArrowRight } from 'lucide-react';
 const Home = () => {
@@ -18,9 +19,12 @@ const Home = () => {
       <div className="section" style={{textAlign:'right'}}>
        <Link to="/blog">そのほかの講演を見る <ArrowRight /></Link>
       </div>
-    </div>
-    <div className="section">
-      <Purpose />
+      <div className="section">
+        <Purpose />
+      </div>
+      <div className="section">
+        <Features />
+      </div>
     </div>
     </>
   );

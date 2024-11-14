@@ -2,7 +2,9 @@
 import React from 'react';
 import tutorials from "../img/tutorials.jpg";
 import meetingSpace from '../img/meeting-space.jpg'; 
-
+import coffeeGear from '../img/coffee-gear.jpg';
+import coffee from '../img/coffee.jpg';
+import Overview from '../Overview';
 const Products = () => {
   return (
     <div style={{display:"flex", justifyContent: "center", margin:"0 auto;"}}>
@@ -29,18 +31,22 @@ const Products = () => {
       <br />
       <div className="columns is-centered">
         <div className="column is-12-mobile is-4-desktop">
-          <img src={tutorials} /><br />
+          <img src={coffeeGear} /><br />
           毎月１回（8月休会）、昼食会の後に多彩な講師を迎えて講演会を開催します。 併せて経済誌「プレジデント」（月2回）の定期配布なども行い、会員組織の「知的サロン」として喜ばれています。 年会費は72,000円です。
         </div>
         <div className="column is-0-mobile is-2-desktop">
           &emsp;
         </div>
         <div className="column is-12-mobile is-4-desktop">
-          <img src={meetingSpace} /><br />
+          <img src={coffee} /><br />
           国内外の「話題のテーマ」を取り上げ、幅広い分野の講師を招いて、お話を伺います。 様々な社会の変化に対応する考え方や、解決する課題を見つけるきっかけにしていただけます。
         </div>
       </div>
+      <Overview />
     </div>
+
+    
+
     </div>
   );
 };
