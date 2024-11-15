@@ -31,7 +31,7 @@ export default function TableLayout() {
     <div className="section">
     <div className="columns is-mobile is-mutiline is-centered">
         <div className="column is-12 table_wrap">
-        <h2 className="title is-3">最近の講演</h2>
+        <h1>最近の講演</h1>
             <p className="has-text-left">
                 <small>※↓画面を横にスクロールできます</small>
             </p>

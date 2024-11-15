@@ -44,7 +44,7 @@ export default function BlogRoll() {
                             <Content>
                                 <p className="title is-5">{item.name}</p>
                                 <p className="subtitle is-6">{item.type}</p>
-                                <p className="subtitle is-6">{formatDate(item.date)}</p>
+                                <p className="subtitle is-6">{formatDate(item.date)}<br />受付 11:30〜<br />{item.place}</p>
                                 {/* Use Link to navigate to the Blog detail page */}
                                 <Link to={`/blog/${item.id}`} className="button is-info">
                                     詳細はこちら

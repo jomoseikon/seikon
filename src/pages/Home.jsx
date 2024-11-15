@@ -17,7 +17,7 @@ const Home = () => {
       <strong>最近の講演</strong>
       <BlogRoll />
       <div className="section" style={{textAlign:'right'}}>
-       <Link to="/blog">そのほかの講演を見る <ArrowRight /></Link>
+       <Link to="/blog">そのほかの講演を見る <ArrowRight style={{margin:"-.3rem"}} /></Link>
       </div>
       <div className="section">
         <Purpose />
