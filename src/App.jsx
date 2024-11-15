@@ -101,7 +101,7 @@ const Navbar = () => {
         <FullWidthImage
           img={{ url: "./img/home-jumbotron.jpg" }} // Update this path with your image URL or remove it if not needed
           title=""
-          subheading="群⾺県の政治·経済·⽂化の発展に寄与する知的サロン"
+          subheading="群馬の政経文化のための知的サロン"
           height={500}
           imgPosition="top center"
         />
