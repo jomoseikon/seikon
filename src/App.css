@@ -1,0 +1,23 @@
+
+
+*,
+*::after, *::before{
+    margin: 0; 
+    padding:0;
+    box-sizing: inherit; 
+}
+
+html {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-family: 'M PLUS 1p', sans-serif;
+}
