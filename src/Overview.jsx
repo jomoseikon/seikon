@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 export default function Overview() {
     return (
-        <div className="container">
             <div className="section">
                 <div className="columns is-mobile is-mutiline is-centered">
                 <table className="table is-fullwidth tbl-inner">
@@ -34,6 +33,5 @@ export default function Overview() {
                 </table>
                 </div>
             </div>
-        </div>
     );
 }

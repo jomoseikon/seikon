@@ -14,7 +14,7 @@ const Products = () => {
       <input type="button" className="button is-info" value="入会申し込みフォーム" /></a><br />
       <div className="columns is-centered">
         <div className="column is-12-desktop is-10-tablet is-7-mobile">
-         豊富な講師陣による良質な講演をお届けする知的サロンです。ぜひご⼊会ください。
+        <p>豊富な講師陣による良質な講演をお届けする知的サロンです。ぜひご⼊会ください。</p>
         </div>
       </div>
       
