@@ -4,10 +4,12 @@ import tutorials from "../img/tutorials.jpg";
 import meetingSpace from '../img/meeting-space.jpg'; 
 import coffeeGear from '../img/coffee-gear.jpg';
 import coffee from '../img/coffee.jpg';
+import pdfFile from '../assets/seikon2024.pdf';
 import Overview from '../Overview';
+import { FileType } from 'lucide-react';
 const Products = () => {
   return (
-    <div className="container">
+    <div>
     <div className="section" >
       <h1>入会のご案内</h1>
       <a href="https://jomo-news-form.spiral-site.com/discussion?_ifbs-discussion=s1_Step1" target="_blank" >
@@ -17,7 +19,7 @@ const Products = () => {
         <p>豊富な講師陣による良質な講演をお届けする知的サロンです。ぜひご⼊会ください。</p>
         </div>
       </div>
-      
+
       {/* Add your products list or any content here */}
       <div className="columns is-centered">
         <div className="column is-6-desktop is-6-tablet is-7-mobile" style={{justifyItems:"center"}}>
@@ -41,9 +43,16 @@ const Products = () => {
         </div>
       </div>
       <Overview />
+      <div className="section is-flex-mobile is-flex-desktop">
+         <a href={pdfFile} target="_blank" rel="noopener noreferrer"><h2><FileType size={24} />&nbsp;PDF ダウンロード</h2></a>
+      </div>
+      <div className="section is-flex-mobile is-flex-desktop">
+        <a href="https://jomo-news-form.spiral-site.com/discussion?_ifbs-discussion=s1_Step1" target="_blank" >
+        <input type="button" className="button is-danger is-outlined" value="入会申し込みフォーム" /></a>
+      </div>
     </div>
 
-    
+   
 
     </div>
   );

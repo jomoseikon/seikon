@@ -57,7 +57,7 @@ h2 {
   font-family: 'M PLUS 1p', sans-serif;
   line-height: 1.1;
 }
-p, table {
+p{
   font-size:1em;
 }
 button {
