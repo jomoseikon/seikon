@@ -19,13 +19,22 @@ table {
 
   /* 横スクロールバー */
 .tbl_wrap {
-    overflow-x: scroll;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
     /* border-left:3px solid #efefef;
     border-top:3px solid #efefef; */
   }
+  .tbl-inner {
+    min-width: 800px; /* Ensures table is wide enough to trigger scroll */
+    width: 100%;
+    white-space: nowrap;
+}
+
   .tbl_wrap::-webkit-scrollbar {
     height: 10px;
   }
+  
   .result_table_wrap::-webkit-scrollbar-track {
     margin: 0 2px;
     background: #ccc;
