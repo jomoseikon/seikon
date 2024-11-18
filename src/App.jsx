@@ -12,9 +12,11 @@ import BlogRoll from './BlogRoll'; // Import BlogRoll
 import TableLayout from './TableLayout';
 import Blog from './pages/Blog';
 import About from './pages/About';
+import ReturnTop from './ReturnTop';
 
 import FullWidthImage from './FullWidthImage';
 import Footer from './Footer';
+
 
 export default function App() {
   return (
@@ -31,7 +33,8 @@ export default function App() {
             <Route path="/about" element={<About />} />
           </Routes>
       
-          <Footer />
+          <Footer />{/* Add ReturnTop component */}
+          <ReturnTop />
         </div>
       </Router>
     </div>

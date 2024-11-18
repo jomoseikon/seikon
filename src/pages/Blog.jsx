@@ -49,7 +49,7 @@ export default function Blog() {
                     />
                 </Columns.Column>
 
-                <Columns.Column size={10} className="is-offset-1">
+                <Columns.Column size={10} className="is-offset-1" style={{backgroundColor:"#f8f8f8"}}>
                     <h3>{name} {kana}</h3>
                     <p>{katagaki}</p>
                     <h4>《プロフィール》</h4>
