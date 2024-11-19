@@ -94,7 +94,7 @@ export default function TableLayout() {
             <div className="section">
                 <div className="columns is-mobile is-multiline is-centered">
                     <div className="column is-12">
-                        <h1 className="title is-4 mb-4">最近の講演</h1>
+                        <h1>最近の講演</h1>
                         {hasScroll && (
                             <p className="has-text-left mb-3">
                                 <small>※↓画面を横にスクロールできます</small>
