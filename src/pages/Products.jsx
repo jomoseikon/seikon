@@ -35,11 +35,11 @@ const Products = () => {
       <div className="columns is-centered">
         <div className="column is-6-desktop is-6-tablet is-7-mobile" style={{justifyItems:"center"}}>
           <img src={coffeeGear} /><br />
-          <p>毎月１回（8月休会）、昼食会の後に多彩な講師を迎えて講演会を開催します。 併せて経済誌「プレジデント」（月2回）の定期配布なども行い、会員組織の「知的サロン」として喜ばれています。 年会費は72,000円です。</p>
+          <p>様々な分野の人の話を聞く機会は、考えやアクテビティを向上させる良いきっかけとなります。また、現代社会の中で、最近の情報をすばやく取り入れることは、時代を生き抜くために必須です。適切なキーワードやネットワークを探すのも、様々な視点が必要になります。</p>
         </div>
         <div className="column is-6-desktop is-6-tablet is-7-mobile" style={{justifyItems:"center"}}>
           <img src={coffee} /><br />
-          <p>国内外の「話題のテーマ」を取り上げ、幅広い分野の講師を招いて、お話を伺います。 様々な社会の変化に対応する考え方や、解決する課題を見つけるきっかけにしていただけます。</p>
+          <p>政経懇話会に参加することで、新たなコミュニティーの構築が可能。県内の政治経済文化界において幅広いネットワークを形成することができます。</p>
         </div>
       </div>
       <Overview />
