@@ -30,7 +30,7 @@ table {
     height: 10px;
   }
   .tbl-inner2 {
-    min-width:800px;/* Ensures table is wide enough to trigger scroll */
+    /*min-width:800px; Ensures table is wide enough to trigger scroll */
     width:100%;
     white-space: nowrap;
   }

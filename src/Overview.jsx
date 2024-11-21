@@ -6,8 +6,8 @@ import './Overview.css';
 export default function Overview() {
     return (
             <div className="section">
-                <div className="columns is-mobile is-mutiline is-centered">
-                <div className="column is-12">
+                <div className="columns is-mobile is-mutiline">
+                <div className="column is-12-desktop is-10-tablet is-11-mobile">
                   <div className="table_wrap">
                     <table className="table is-fullwidth tbl-inner2">
                         <tbody>
@@ -31,7 +31,7 @@ export default function Overview() {
                             </tr>
                             <tr>
                                 <td>●問い合わせ	群馬政経懇話会事務局（上毛新聞社営業局事業部内）<br />TEL: 027-254-9955 FAX: 027-254-9906（平日 9:00〜17:00）</td>
-                            </tr>
+                            </tr>12
                         </tbody>
                     </table>
                   </div>
