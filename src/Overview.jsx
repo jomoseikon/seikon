@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Overview() {
     return (
             <div className="section">
-                <div className="columns is-mobile is-mutiline is-centered">
+                <div className="columns is-mobile is-mutiline is-centered table_wrap">
                 <table className="table is-fullwidth tbl-inner">
                     <tbody>
                         <tr>
