@@ -9,7 +9,7 @@ export default function Overview() {
                 <div className="columns is-mobile is-mutiline">
                 <div className="column is-12-desktop is-10-tablet is-6-mobile">
                   <div className="table_wrap">
-                    <table className="table is-fullwidth tbl-inner2">
+                    <table className="table is-fullwidth tbl-inner2 text-small">
                         <tbody>
                             <tr>
                                 <td><p className="has-text-left mb-3"><small>※↓画面を横にスクロールできます</small></p></td>
