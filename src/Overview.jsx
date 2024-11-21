@@ -12,9 +12,6 @@ export default function Overview() {
                     <table className="table is-fullwidth tbl-inner2 text-small">
                         <tbody>
                             <tr>
-                                <td><p className="has-text-left mb-3"><small>※↓画面を横にスクロールできます</small></p></td>
-                            </tr>
-                            <tr>
                                 <td>●経営者、自治体、議会、各種団体などの会員で構成</td>
                             </tr>
                             <tr>
@@ -31,7 +28,7 @@ export default function Overview() {
                             </tr>
                             <tr>
                                 <td>●問い合わせ	群馬政経懇話会事務局（上毛新聞社営業局事業部内）<br />TEL: 027-254-9955 FAX: 027-254-9906（平日 9:00〜17:00）</td>
-                            </tr>12
+                            </tr>
                         </tbody>
                     </table>
                   </div>
