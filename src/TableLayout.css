@@ -30,7 +30,12 @@ table {
     width: 100%;
     white-space: nowrap;
 }
-
+.tbl-inner td {
+  max-width: 300px; /* Adjust based on your design */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
   .tbl_wrap::-webkit-scrollbar {
     height: 10px;
   }

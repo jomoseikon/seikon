@@ -22,6 +22,14 @@ const formatDate = (dateStr) => {
     }
 };
 
+// New utility function to truncate text
+const truncateText = (text, maxLength = 50) => {
+    if (!text) return '';
+    return text.length > maxLength 
+        ? text.substring(0, maxLength) + '...' 
+        : text;
+};
+
 export default function TableLayout() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -107,21 +115,30 @@ export default function TableLayout() {
                             <table className="table is-fullwidth tbl-inner">
                                 <thead>
                                     <tr>
-                                        <th>タイトル</th>
+                                        <th>氏名</th>
+                                        <th>所属</th>
+                                        <th>講演テーマ</th>
                                         <th>日付</th>
-                                        <th>場所</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {data.map((item) => (
                                         <tr key={item.id}>
                                             <td>
-                                                <Link to={`/blog/${item.id}`}>
-                                                    {item.name || '無題'}
+                                                <Link 
+                                                    to={`/blog/${item.id}`} 
+                                                    title={item.name}
+                                                >
+                                                    {truncateText(item.name, 20) || '無題'}
                                                 </Link>
                                             </td>
+                                            <td title={item.katagaki}>
+                                                {truncateText(item.katagaki, 30)}
+                                            </td>
+                                            <td title={item.title}>
+                                                {truncateText(item.title, 50)}
+                                            </td>
                                             <td>{formatDate(item.date)}</td>
-                                            <td>{item.place || '-'}</td>
                                         </tr>
                                     ))}
                                 </tbody>
