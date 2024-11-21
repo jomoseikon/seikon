@@ -7,7 +7,7 @@ export default function Overview() {
     return (
             <div className="section">
                 <div className="columns is-mobile is-mutiline">
-                <div className="column is-12-desktop is-10-tablet is-11-mobile">
+                <div className="column is-12-desktop is-10-tablet is-6-mobile">
                   <div className="table_wrap">
                     <table className="table is-fullwidth tbl-inner2">
                         <tbody>
