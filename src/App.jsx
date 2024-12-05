@@ -1,6 +1,9 @@
 // App.jsx
-import { useState } from 'react';
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Link, Routes, Route, useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga4';
+
+//import { initializeAnalytics, trackPageView } from './utils/analytics';
 import logo from "./img/logo.svg";
 import "./Navbar.css";
 import 'bulma/css/bulma.min.css';
@@ -17,11 +20,35 @@ import ReturnTop from './ReturnTop';
 import FullWidthImage from './FullWidthImage';
 import Footer from './Footer';
 
+// Analytics Wrapper Component
+const AnalyticsWrapper = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Track page views when the route changes
+    if (typeof window !== 'undefined') {
+      ReactGA.send({ 
+        hitType: 'pageview', 
+        page: location.pathname 
+      });
+    }
+  }, [location]);
+
+  return null;
+};
 
 export default function App() {
+  // Initialize analytics when the app starts
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      ReactGA.initialize('G-NE6XRMDYNW'); // Replace with your actual Measurement ID
+    }
+  }, []);
+
   return (
     <div>
       <Router>
+      <AnalyticsWrapper />
         <div className="App">
           <Navbar />
           
@@ -102,7 +129,7 @@ const Navbar = () => {
           </div>
         </nav>
         <FullWidthImage
-          img={{ url: "./img/home-jumbotron.jpg" }} // Update this path with your image URL or remove it if not needed
+          img={{ url: "./img/home-jumbotron.jpg" }}
           title=""
           subheading="群馬の政経文化のための知的サロン"
           height={500}
