@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./FullWidthImage.css"; // Ensure this file exists and has necessary styles
-import seikei from "./img/title2024.svg"; // Adjust the path if necessary
+import seikei from "./img/title2025.svg"; // Adjust the path if necessary
 
 export default function FullWidthImage(props) {
   const {
