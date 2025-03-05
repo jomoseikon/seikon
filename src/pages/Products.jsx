@@ -4,7 +4,7 @@ import tutorials from "../img/tutorials.jpg";
 import meetingSpace from '../img/meeting-space.jpg'; 
 import coffeeGear from '../img/coffee-gear.jpg';
 import coffee from '../img/coffee.jpg';
-import pdfFile from '../assets/seikon2024.pdf';
+import pdfFile from '../assets/seikon2025.pdf';
 import Overview from '../Overview';
 import { FileType } from 'lucide-react';
 const Products = () => {
