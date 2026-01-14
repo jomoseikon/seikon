@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./FullWidthImage.css"; // Ensure this file exists and has necessary styles
-import seikei from "./img/title2025.svg"; // Adjust the path if necessary
+import seikei from "./img/title2026.svg"; // Adjust the path if necessary
 
 export default function FullWidthImage(props) {
   const {
@@ -63,8 +63,8 @@ export default function FullWidthImage(props) {
                   lineHeight: "1",
                   padding: "0.25rem",
                   marginTop: "0.5rem",
-                  letterSpacing:".35em",
-                  fontWeight:"lighter",
+                  letterSpacing: ".35em",
+                  fontWeight: "lighter",
                 }}
               >
                 {subheading}
@@ -84,7 +84,7 @@ export default function FullWidthImage(props) {
                 {title}
               </h1>
             )}
-            
+
           </div>
         )}
       </div>
